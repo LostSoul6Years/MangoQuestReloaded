@@ -1,6 +1,6 @@
 # MangoQuestReloaded
 
-
+Code updated as of 8/4/2022
 
 這是一個由原版芒果任務(CutieMango著)分支的小插件
 
