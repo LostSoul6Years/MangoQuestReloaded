@@ -10,6 +10,8 @@
  
 -DO NOT share the discord server unless UNDER LIMITED CONDITIONS
 
+-you are ALLOWED to use the code in any way you want, including that of commercial purposes (allowed in code but not in the form of software)
+
 
 # Discord Server (discord伺服器)
 Discord Server: https://discord.gg/zjuzXE3fWn 
