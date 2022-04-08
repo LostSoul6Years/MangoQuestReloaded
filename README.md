@@ -2,9 +2,12 @@
 
 # 使用條款 (terms of conditions)
 -DO NOT redistribute the software for commercial purpose.
+
 -DO inspect the source code in any way, including the use of decompilers.
+
 -DO NOT claim the source code to be yours, unless you have made considerable work to it
- (This is to preserve the copyright of the original author cutiemango)
+(This is to preserve the copyright of the original author cutiemango)
+ 
 -DO NOT share the discord server unless UNDER LIMITED CONDITIONS
 
 
