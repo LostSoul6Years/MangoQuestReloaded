@@ -1,5 +1,29 @@
 # MangoQuestReloaded
 
+# 使用條款 (terms of conditions)
+-DO NOT redistribute the software for commercial purpose.
+-DO inspect the source code in any way, including the use of decompilers.
+-DO NOT claim the source code to be yours, unless you have made considerable work to it
+ (This is to preserve the copyright of the original author cutiemango)
+-DO NOT share the discord server unless UNDER LIMITED CONDITIONS
+
+
+# Discord Server (discord伺服器)
+Discord Server: https://discord.gg/zjuzXE3fWn 
+
+This link should be shared under limited conditions. Being in the group you automatically agree to observe these rules.
+This is enforced to ensure to keep the server member count in minimum conditions and only admit thoses with true intent of using the plugin.
+這個鏈接衹能在有限條款内被分享。在群組裏面意味著你已經同意這些條款。
+強制執行此操作是為了確保將服務器成員數量保持在最低條件下，並且只允許那些真正打算使用插件的成員。
+
+Limited Conditions (有限條件):
+-Sharing this link on any social media or platforms is strictly prohibited, except in Direct Messages.
+ 嚴禁在任何社交媒體或平台上分享此鏈接，私信除外。
+-Only share the linl to your friends or friends of freinds.Sharing the link to strangers is strictly prohibited.
+ 僅可以將鏈接分享給您的朋友或朋友的朋友。嚴禁將鏈接分享給陌生人。
+
+# 插件資訊 Plugin Information
+
 Code updated as of 8/4/2022
 
 開始使用！請到 https://github.com/SakurajiKanade/MangoQuestReloaded/wiki
