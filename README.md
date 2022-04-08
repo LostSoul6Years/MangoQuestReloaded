@@ -2,6 +2,8 @@
 
 Code updated as of 8/4/2022
 
+開始使用！請到 https://github.com/SakurajiKanade/MangoQuestReloaded/wiki
+
 這是一個由原版芒果任務(CutieMango著)分支的小插件
 
 # 裏面包括 (因爲懶所以用google translate將英文翻譯到中文，請見諒)
@@ -20,6 +22,9 @@ Code updated as of 8/4/2022
 
 This is a forked plugin from the original author Cutiemango.
 Being a forked project, it inherits many feautres from the original mangoquest but at the same time with more features implemented
+
+Journey starts here!
+check out https://github.com/SakurajiKanade/MangoQuestReloaded/wiki
 
 # It contains:
 -more than 15 objectives more than the original plugin
