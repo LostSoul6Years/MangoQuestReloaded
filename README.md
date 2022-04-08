@@ -16,6 +16,8 @@
 這個 repo 主要是給 wiki 引導新用戶通過插件，同時也介紹了 MangoQuestReloaded 與原插件對比的新特性。
 源代碼也得到維護，雖然不定期。 不要相信這個repo中的源代碼，加入discord組來獲得源代碼和其他支持。
 
+——————————————————————————————————————————————————————————————————————————————————————————————
+
 This is a forked plugin from the original author Cutiemango.
 Being a forked project, it inherits many feautres from the original mangoquest but at the same time with more features implemented
 
