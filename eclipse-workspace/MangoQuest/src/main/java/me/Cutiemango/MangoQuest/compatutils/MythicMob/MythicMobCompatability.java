@@ -41,14 +41,14 @@ public class MythicMobCompatability {
 		if(useLegacy) {
 			return MythicMobLegacy.getMythicMobPlaceholderedName(id);
 		}else {
-			return "";
+			return MythicMobNew.getMythicMobPlaceholderedName(id);
 		}
 	}
 	public String getMythicInternalName(String mtmMob) {
 		if(useLegacy) {
 			return MythicMobLegacy.getInternalNameFromId(mtmMob);
 		}else {
-			return "";
+			return MythicMobNew.getInternalNameFromId(mtmMob);
 		}
 	}
 	
