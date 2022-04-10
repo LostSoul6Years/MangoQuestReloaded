@@ -1,16 +1,8 @@
 # MangoQuestReloaded
 
 # 使用條款 (terms of conditions)
--DO NOT redistribute the software for commercial purpose.
-
--DO inspect the source code in any way, including the use of decompilers.
-
--DO NOT claim the source code to be yours, unless you have made considerable work to it
-(This is to preserve the copyright of the original author cutiemango)
- 
--DO NOT share the discord server unless UNDER LIMITED CONDITIONS
-
--you are ALLOWED to use the code in any way you want, including that of commercial purposes (allowed in code but not in the form of software)
+-basically non-existent.This is an open source project, you can do whatever you want with it. Nevertheless, it is probably better to observe the rules set by the original author Cutiemango.
+ （基本上不存在。這個是開源項目，你可以做任何東西。不過最好跟從原作者的使用條款)
 
 
 # Discord Server (discord伺服器)
