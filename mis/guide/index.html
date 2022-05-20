@@ -105,6 +105,8 @@
                 <li class="third-level"><a href="#preparation-before-using">Preparation Before Using 使用前準備</a></li>
             <li class="second-level"><a href="#in-game-settings">in-game settings 游戲中設置</a></li>
                 
+                <li class="third-level"><a href="#permissions-setup-for-using-commands-and-other-features">使用指令的和其他權限 Permissions setup for using commands and other features</a></li>
+                <li class="third-level"><a href="#book-gui-in-action-mq-q">Book GUI in action 書本界面演示 (/mq q) </a></li>
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -178,11 +180,54 @@ Next, we will look at some in-game work.
 <hr>
 
 <h2 id="in-game-settings">in-game settings 游戲中設置</h2>
+<p><br>
+As aforementioned, in game mostly you will be dealing with the book GUI. There are three main commands concerned in this settings, they are /mq q, /mq e and /mqa commands. The frst is the command that the player will be using to open the book journal and manage their quest progress. The latter two will be the one you are expected to use the most, which concerns the use of the admin interface. There are many admin commands at the moment, but we will just go through some of the most important commands for the most important functions.
+如前所述，在遊戲中，大多數情況下您將會在書本 GUI度過。 這個插件主要涉及兩個命令，一個是/mq q，一個是/mqa。 這些都是用來打開不同的書本界面。前者是玩家將用來打開書籍日記並管理他們的任務進度的命令。 後者將是您最常使用的功能,也是你的管理員界面。 目前有許多管理命令，但我們將只介紹一些最重要的命令以實現最重要的功能。</p>
+<hr>
+
+<h3 id="permissions-setup-for-using-commands-and-other-features"><h3 id=perm>使用指令的和其他權限 Permissions setup for using commands and other features</h3></h3>
+<p>Before doing anything in-game, permissions are required in case you are not op. The permissions are listed as below:
+在遊戲中做任何事情之前，如果您不是GM，則需要權限。 權限列表如下：<br></p>
+<pre><code>MangoQuest.takeQuest.(任務QuestID) --- if the quest is set to require permissions, then players need permissions to take this quest. 如果任務設置為需要接受任務的許可，則需要此權限才能接受此任務
+
+MangoQuest.AdminCommand --- The permission to use admin command 使用管理員命令的權限
+MangoQuest.ConversationEditor --- The permission to use conversation editor 使用對話編輯器的權限
+mangoquestreloaded.bungeecord --- The permission to check if player is capable of sending bungeecord command in quest trigger 玩家是否有權在任務觸發使用bungeecord 指令 (covered later 會在後面的内容涵蓋)
+</code></pre>
+<p><br></p>
+<h3 id="book-gui-in-action-mq-q"><h3 id=mqq>Book GUI in action 書本界面演示 (/mq q) </h3></h3>
+<p><br>
+By doing /mq q, you can see a list of quests related commands. The most important tool is /mq q list, which opens the quest journal. The others are commands that are functions that are already included in the book interface.
+通過執行 /mq q，您可以看到與任務相關的命令列表。 最重要的工具是 /mq q list，它可以打開任務日誌。 其他的命令是已經包含在書籍界面中的功能。</p>
+<p><br>
+<img alt="mqqlist" src="../img/mqqlist.png" />
+<br><br><br><br>
+This is the main interface you use to take/quit quest/check progress.  The interface is just a very simple click GUI. Most text in the book GUIs are clickable to do stuffs. Using this for an example, the three quest states (acceptable,in progress, finished) are all buttons to show the quests under the button categories. 
+這是您用來接受/退出任務/檢查進度的主界面。 該界面只是一個非常簡單的點擊GUI。 書中 GUI 中的大多數文本都是可點擊的。 以此為例，三個任務狀態（可接受、進行中、已完成）都是按鈕，用於顯示按鈕類別下的任務。
+<br>
+<img alt="acceptable.png" src="../img/Acceptable.png" />
+<br><br><br><br>
+If you do not understand the uses of some buttons, do not panick. Upon hovering buttons, there will be hints to tell you what that button does in most cases.
+如果您不了解某些按鈕的用途，請不要驚慌。 懸停按鈕時，將有提示告訴您該按鈕在大多數情況下的作用。
+<br>
+Just try clicking every text button ever in the book GUI and you may have unexpected surprises!
+只需嘗試單擊本書 GUI 中的所有字眼按鈕，您可能會遇到意想不到的驚喜！
+<br></p>
 <style>
-#wth{
+#wth,#mqq,#perm{
     font-weight: bold;
 }
-</style></div>
+</style>
+<script>
+    function removeElementsByTag(className){
+    const elements = document.getElementsByTagName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+    removeElementsByTag("footer");
+    //parent.appendChild(element)
+</script></div>
         
         
     </div>
@@ -190,15 +235,11 @@ Next, we will look at some in-game work.
     
       <footer class="col-md-12 text-center">
           
-          
-            <hr>
-            <p>
-            <small>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</small>
-            </p>
-          
+<hr>
+<p style="color: blue;">MangoQuestReloaded team 2021-2022, built with love <br>
+   <p style="color: red;">Affiliated with <a href="pecomc.ml">Pecomc 佩可伺服器</a></p>
+</p>
 
-          
-          
       </footer>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
