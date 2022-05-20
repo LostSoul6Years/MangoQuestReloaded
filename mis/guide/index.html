@@ -20,7 +20,7 @@
     <link href='//rsms.me/inter/inter.css' rel='stylesheet' type='text/css'>
     <link href='//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,600,700&subset=latin-ext,latin' rel='stylesheet' type='text/css'>
     <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
-    <link href="../../css/base.min.css" rel="stylesheet">
+    <link href="../../css/base.css" rel="stylesheet">
     <link href="../../css/cinder.min.css" rel="stylesheet">
 
     
@@ -99,15 +99,40 @@
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
         <li class="first-level active"><a href="#overview">Overview 概覽</a></li>
-            <li class="second-level"><a href="#getting-started">Getting Started 開始使用</a></li>
+            <li class="second-level"><a href="#1-getting-started">1 Getting Started 開始使用</a></li>
                 
-                <li class="third-level"><a href="#instalation"> Instalation 安裝 </a></li>
-                <li class="third-level"><a href="#preparation-before-using">Preparation Before Using 使用前準備</a></li>
-            <li class="second-level"><a href="#in-game-settings">in-game settings 游戲中設置</a></li>
+                <li class="third-level"><a href="#11-instalation">1.1  Instalation 安裝 </a></li>
+					
+                <li class="third-level"><a href="#12-preparation-before-using">1.2 Preparation Before Using 使用前準備</a></li>
+					
+            <li class="second-level"><a href="#2-in-game-settings">2 in-game settings 游戲中設置</a></li>
                 
-                <li class="third-level"><a href="#permissions-setup-for-using-commands-and-other-features">使用指令的和其他權限 Permissions setup for using commands and other features</a></li>
-                <li class="third-level"><a href="#book-gui-in-action-mq-q">Book GUI in action 書本界面演示 (/mq q) </a></li>
-                <li class="third-level"><a href="#lets-make-some-quests-mq-e"> Lets make some quests! 來做任務吧! (/mq e) </a></li>
+                <li class="third-level"><a href="#21-permissions-setup-for-using-commands-and-other-features">2.1 使用指令的和其他權限 Permissions setup for using commands and other features</a></li>
+					
+                <li class="third-level"><a href="#22-book-gui-in-action-mq-q">2.2 Book GUI in action 書本界面演示 (/mq q) </a></li>
+					
+                <li class="third-level"><a href="#23-lets-make-some-quests-mq-e">2.3  Lets make some quests! 來做任務吧! (/mq e) </a></li>
+					
+					<li class="fourth-level"><a href="#231-naming-the-quest">2.3.1 Naming the quest 命名任務 </a></li>
+						
+					<li class="fourth-level"><a href="#232-configure-the-major-quest-settings">2.3.2  configure the major quest settings 設定主要任務信息  </a></li>
+						
+						<li class="fifth-level"><a href="#2321-redo-settings"> 2.3.2.1  Redo Settings 重複執行設定 </a></li>
+							
+						<li class="fifth-level"><a href="#2322-quest-quitable"> 2.3.2.2 Quest Quitable 放棄任務</a></li>
+							
+						<li class="fifth-level"><a href="#2323-enable-quest-take-permission"> 2.3.2.3 Enable Quest Take Permission 任務接取權限</a></li>
+							
+						<li class="fifth-level"><a href="#2324-quest-allowed-world">2.3.2.4  Quest Allowed World 限制任務執行世界 </a></li>
+							
+						<li class="fifth-level"><a href="#2325-quest-display-settings">2.3.2.5  Quest Display Settings 任務顯示設定    </a></li>
+							
+						<li class="fifth-level"><a href="#2326-time-limited-quest">2.3.2.6  Time-Limited Quest 限時任務</a></li>
+							
+					<li class="fourth-level"><a href="#24-quest-main-settings">2.4 Quest Main Settings 任務主要内容設定 </a></li>
+						
+						<li class="fifth-level"><a href="#241-quest-trigger">2.4.1 Quest Trigger 任務事件觸發</a></li>
+							
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
@@ -117,20 +142,21 @@
 <br>
 本節將教您如何快速設置 芒果任務 (舊版的主要功能)，並快速摸索功能而上手</p>
 <hr>
-<h2 id="getting-started">Getting Started 開始使用</h2>
+
+<h2 id="1-getting-started">1 Getting Started 開始使用</h2>
 <p><br>
 <strong>For Old Users: 致舊用家</strong> <br>
 New version mangoquestreloaded is totally backward compatible with the old project mangoquest so no roundabouts are needed. <br><br>
 新版本的 mangoquestreloaded 完全向後兼容舊項目 mangoquest，因此不需要迂迴的方法來執行。 
 <br></p>
-<h3 id="instalation"><h3 id="wth" class="&nbsp;&nbsp;&nbsp;&nbsp;"> Instalation 安裝 </h3></h3>
+<h3 id="11-instalation">1.1 <h3 id="wth" class="&nbsp;&nbsp;&nbsp;&nbsp;"> Instalation 安裝 </h3></h3>
 <p><br>
 <strong>For Old Users: 致舊用家</strong> <br>
 Delete the old MangoQuest.jar in the plugins folder, then drag the new MangoQuestReloaded-(version).jar into the pluigns folder, then start the server and the plugin. Then everything is all set :) <br><br>
 刪除plugins文件夾中舊的MangoQuest.jar，然後將新的MangoQuestReloaded-(version).jar拖到pluigns文件夾中，然後啟動服務器和插件。 然後一切就都準備好了:)<br></p>
 <p>New users can just drag the jar into the plugins folder then start the server, then the MangoQuestReloaded folder along with the necessary files will be generated for you.
 新用戶只需將 jar 拖到 plugins 文件夾中，然後啟動服務器，就會為您生成 MangoQuestReloaded 文件夾以及必要的文件。</p>
-<h3 id="preparation-before-using">Preparation Before Using 使用前準備</h3>
+<h3 id="12-preparation-before-using">1.2 Preparation Before Using 使用前準備</h3>
 <p>After starting the server, you will have several files at your disposal. Before you start using the plugin, there will be a few configurations you need to make. <br>
 啟動服務器後，您將擁有幾個文件供您使用。 在開始使用插件之前，您需要進行一些配置。<br>
 <br>
@@ -180,15 +206,17 @@ Next, we will look at some in-game work.
 接下來，我們會看看游戲中的設置。</p>
 <hr>
 
-<h2 id="in-game-settings">in-game settings 游戲中設置</h2>
+<h2 id="2-in-game-settings">2 in-game settings 游戲中設置</h2>
 <p><br>
 As aforementioned, in game mostly you will be dealing with the book GUI. There are three main commands concerned in this settings, they are /mq q, /mq e and /mqa commands. The frst is the command that the player will be using to open the book journal and manage their quest progress. The latter two will be the one you are expected to use the most, which concerns the use of the admin interface. There are many admin commands at the moment, but we will just go through some of the most important commands for the most important functions.
 如前所述，在遊戲中，大多數情況下您將會在書本 GUI度過。 這個插件主要涉及兩個命令，一個是/mq q，一個是/mqa。 這些都是用來打開不同的書本界面。前者是玩家將用來打開書籍日記並管理他們的任務進度的命令。 後者將是您最常使用的功能,也是你的管理員界面。 目前有許多管理命令，但我們將只介紹一些最重要的命令以實現最重要的功能。</p>
 <hr>
 
-<h3 id="permissions-setup-for-using-commands-and-other-features"><h3 id=perm>使用指令的和其他權限 Permissions setup for using commands and other features</h3></h3>
+<h3 id="21-permissions-setup-for-using-commands-and-other-features">2.1 <h3 id=perm>使用指令的和其他權限 Permissions setup for using commands and other features</h3></h3>
 <p>Before doing anything in-game, permissions are required in case you are not op. The permissions are listed as below:
 在遊戲中做任何事情之前，如果您不是GM，則需要權限。 權限列表如下：<br></p>
+<div id="scrolltoherelolololol"></div>
+
 <pre><code>MangoQuest.takeQuest.(任務QuestID) --- if the quest is set to require permissions, then players need permissions to take this quest. 如果任務設置為需要接受任務的許可，則需要此權限才能接受此任務
 
 MangoQuest.AdminCommand --- The permission to use admin command 使用管理員命令的權限
@@ -196,7 +224,7 @@ MangoQuest.ConversationEditor --- The permission to use conversation editor 使�
 mangoquestreloaded.bungeecord --- The permission to check if player is capable of sending bungeecord command in quest trigger 玩家是否有權在任務觸發使用bungeecord 指令 (covered later 會在後面的内容涵蓋)
 </code></pre>
 <p><br></p>
-<h3 id="book-gui-in-action-mq-q"><h3 id=mqq>Book GUI in action 書本界面演示 (/mq q) </h3></h3>
+<h3 id="22-book-gui-in-action-mq-q">2.2 <h3 id=mqq>Book GUI in action 書本界面演示 (/mq q) </h3></h3>
 <p><br>
 By doing /mq q, you can see a list of quests related commands. The most important tool is /mq q list, which opens the quest journal. The others are commands that are functions that are already included in the book interface.
 通過執行 /mq q，您可以看到與任務相關的命令列表。 最重要的工具是 /mq q list，它可以打開任務日誌。 其他的命令是已經包含在書籍界面中的功能。</p>
@@ -217,17 +245,88 @@ Just try clicking every text button ever in the book GUI and you may have unexpe
 <br>
 <br>
 <br></p>
-<h3 id="lets-make-some-quests-mq-e"><h3 id=mqe> Lets make some quests! 來做任務吧! (/mq e) <br></h3>
+<h3 id="23-lets-make-some-quests-mq-e">2.3 <h3 id=mqe> Lets make some quests! 來做任務吧! (/mq e) <br></h3>
 <p>Most of the quests are made through the use of Book GUI as said, which is the online quest editor. The command to bring it up is /mq e.
 如前所述，大多數任務都是通過使用 Book GUI 完成的，這是在線任務編輯器。 啟動它的命令是 /mq e。
 <br></p>
 <p><img alt="mqe.png" src="../img/mqe.png" />
 <br><br>
 The options are quite self-explanatory. There are 3 buttons: New quest, edit quest and remove quests.
-這些選項是挺明顯的。 有 3 個按鈕：新任務、編輯任務和刪除任務。<br></p>
+這些選項是挺明顯的。 有 3 個按鈕：新任務、編輯任務和刪除任務。<br>
+We will first go through how to make a quest thoroughly. 我們會先看看怎樣做一個任務<br></p>
+<h4 id="231-naming-the-quest">2.3.1 <h4 id="creating">Naming the quest 命名任務 <br></h4></h4>
+<p><img alt="createquest.png" src="../img/createquest.png" /><br><br>
+First we will set the quest names. The upper part of the settings shows Quest ID settings. QuestID is the identifier used by the plugin to identify quests just like a file name. The requirement for this field is that it has to be unqiue, or else chaos will occur. </p>
+<p>首先是設定任務的名稱。 上面的QuestID(任務内部名稱)是供系統辨認任務的名稱，就像檔案名字一樣，要求是要獨一無二，不然會發生混亂。
+<br>
+The second field is the Quest Name, which is the settings for the display name of the quest. This will be the text shown to players in the book GUI.There are virtually no requirements for this field, and you can set it to however you want. You can even use color codes such as hex color (1.16+), to decorate it.
+第二個選項是任務的顯示名稱。 這是那個會在書本界面中顯示的任務名稱， 你可以把他設置成任何你喜歡的模樣。你更可以使用顔色代碼 例如16進制顔色來裝飾他。
+<br>
+These options can be set through entering the desired text in the chatbox. 
+可以通過在聊天框中輸入所需的文字來設置這些選項。
+<br>
+After setting all the fields, we can go ahead and hit the 【create】 button. 
+設置了所有東西之後，我們可以點【創造】按鈕。
+<br><br><br></p>
+<h4 id="232-configure-the-major-quest-settings">2.3.2 <h4 id="actuallyids are not used anymore"> configure the major quest settings 設定主要任務信息 </h4> <br></h4>
+<p>After adding the names we can now come to the main settings of the quests. Here you will set all the information regarding the quests, including how and where the quest will be displayed, how the quests are taken, what are the stages/objectives, what are the events that might happen, what are the rewards etc. 添加名稱後，我們現在可以進入任務的主要設置。 在這裡，您將設置有關任務的所有信息，包括任務的顯示方式和位置、任務的執行方式、階段/目標是什麼、可能發生的事件是什麼、獎勵是什麼等。<br>
+<img alt="questsettingsp1.png" src="../img/questsettingsp1.png" /><br><br>
+You can check out some basic info on the first page. The <strong>quest ID</strong> is as the previously set ID,but the <strong>quest name</strong> can be changed to your liking if you regret your choice of name by clicking on the previously set name. <br>
+The <strong>Quest NPC Option</strong> is the NPC your player is limited to take quest from. With the NPC set, you are allowed to take quest through NPC gui and only allowed to take quest near the NPC.  <br>
+您可以在第一頁查看一些基本信息。 <strong>任務ID</strong>與之前設置的ID一樣，但是如果您對選擇的名稱感到遺憾，可以通過單擊之前設置的名稱來更改<strong>任務名稱</strong>。 <br></p>
+<h6 id="2321-redo-settings"><h4 id="aids"> 2.3.2.1  Redo Settings 重複執行設定</h4> <br></h6>
+<p>The <strong>Redo Settings</strong> is the cooldown for taking quests again after finishing quests. The default is once_only, meaning that you can never take the quest again. Upon clicking the Redo Settings button, you will be directed to the settings:<br>
+<strong>Quest NPC Option</strong> 是您的玩家被限制接受任務的 NPC。 設置NPC後，您可以通過NPC gui接任務，並且只能在NPC附近接任務。 <strong>重做設置</strong>是完成任務後再次接任務的冷卻時間。 默認值為 once_only，這意味著您永遠不能再次接受該任務。 單擊重做設置按鈕後，您將被引導至設置：<br><br>
+<img alt="cooldowninner.png" src="../img/cooldowninner.png" /><br><br><br>
+This is the interface to set the quest cooldown mode.
+The daily,weekly are self-explanatory, meaning that one can take the quest once per day/week. Whereas the COOLDOWN mode is a mode which allows you to define your own cooldown time. To select the modes, close the book GUI and enter the desired mode and hit enter.<br>
+這是設置任務冷卻模式的界面。
+每日，每周的功能很明顯,意味著一個人可以每天/每週接受一次任務。 而冷卻模式是一種允許您定義自己的冷卻時間的模式。 要選擇模式，請關閉圖書 GUI 並輸入所需的模式並按 Enter。<br>
+<img alt="questsettingsp1cooldown.png" src="../img/questsettingsp1cooldown.png" /><br><br><br>
+In particular, when you set the cooldown mode, an additional option pops up which allows you to define your own cooldown. Click it and enter custom cooldown in the chatbox and enter. <strong>Note that the unit to input is seconds. You only have to enter the seconds (a bit of math is required to convert dates to seconds, will be patched in later versions because this is stupid)</strong> <br>
+特別是，當您設置冷卻模式時，會彈出一個附加選項，允許您定義自己的冷卻時間。 單擊它並在聊天框中輸入自定義冷卻時間並輸入。<strong>請注意，在這裏輸入的時間單位是秒，衹需輸入數字即可</strong><br><br>
+<img alt="questsettingsp2.png" src="../img/questsettingsp2.png" /><br><br><br>
+The second page concerns some display settings and also how the quests will go. Likewise, I will pick a few mentionable topics to discuss.第二頁涉及一些顯示設置以及任務將如何進行。 同樣，我將挑選一些可提及的話題進行討論。<br><br></p>
+<h5 id="2322-quest-quitable"><h5> 2.3.2.2 Quest Quitable 放棄任務</h5></h5>
+<p>If set to true, then the quest cannot be quitted once started and the player will be forced to complete it.<br>
+如果設定成TRUE,則任務不可以中途退出<br><br></p>
+<h5 id="2323-enable-quest-take-permission"><h5> 2.3.2.3 Enable Quest Take Permission 任務接取權限</h5></h5>
+<p>If enabled, taking this quest will require permission MangoQuest.TakeQuest.(QuestID). For more details about permissions please go to <a class="perm" href="#21-permissions-setup-for-using-commands-and-other-features">Permissions as defined above</a>
+如果啟用，執行此任務將需要 MangoQuest.Take Quest.(Quest ID) 權限。 有關更多權限的詳細信息，請轉到<a class="perm" href="#21-permissions-setup-for-using-commands-and-other-features">以上定義的權限</a>
+<br><br></p>
+<h5 id="2324-quest-allowed-world">2.3.2.4 <h5> Quest Allowed World 限制任務執行世界 </h5></h5>
+<p>This option is for limiting player to only do quests in a certain world. To set the world, enter the world name into the chatbox and hit enter. 此選項用於限制玩家僅在某個世界中執行任務。 要設置世界，請在聊天框中輸入世界名稱並按 Enter。<br><br></p>
+<h5 id="2325-quest-display-settings">2.3.2.5 <h5> Quest Display Settings 任務顯示設定    </h5></h5>
+<p>In the page, you can also find some quest display settings to configure. The four display modes are: Acceptable, in progress, finished quests, and NPC Gui. The first three are the three categorizes as listed in the quest journal /mq q list. By enabling each category (right click the cross/tick button), you allow them to be displayed in each cateogry. Whereas the fourth is the option whether to display the quest in NPC gui (right click Quest NPC). <br>
+在頁面中，您還可以找到一些要配置的任務顯示設置。 四種顯示模式分別為：可接受、進行中、已完成和NPC Gui。 前三個是任務日誌/mq q 列表中列出的三個類別。 通過啟用每個類別（右鍵單擊交叉/勾選按鈕），您可以允許它們顯示在每個類別中。 而第四個是是否在NPC gui中顯示任務的選項（右鍵單擊任務NPC）。<br><br></p>
+<h5 id="2326-time-limited-quest">2.3.2.6 <h5> Time-Limited Quest 限時任務</h5></h5>
+<p>This option allows you to choose whether to disqualify the quest with a timer. When enabled, the timer ticks the moment you start taking quest, then disqualify when time is up. Toggle by clicking cross/tick button. Upon enabling, you will see an additional option just like the Redo Settings. Repeat the same steps.此選項允許您選擇是否使用計時器取消任務的資格。 啟用後，計時器會在您開始接受任務的那一刻滴答作響，然後在時間到時取消資格。 通過單擊交叉/勾選按鈕進行切換。 啟用後，您將看到一個附加選項，就像重複執行設置一樣。 重複相同的步驟。<br><br></p>
+<h4 id="24-quest-main-settings">2.4 Quest Main Settings 任務主要内容設定 <br></h4>
+<p><img alt="maineditor.png" src="../img/maineditor.png" /><br><br><br>
+Here you will find the main settings which control the flow of the gameplay of players. The setting on top <strong>(Quest Requirement)</strong> allows you to set what extra conditions are needed before you can take the quest. The setting <strong>Events (Trigger)</strong> will be a series of events that will take place throughout the quest, for revealing plots, revealing villains, whatever events you can come up with! The final setting <strong>Settings</strong> will be the most important part of the quest setting. It controls how many stages there are in the quest, and what objectives in each stage you need to fulfill in order to complete the quest. As usual, I will take the most important parts to be included in the tutorial. 在這裡，您將找到控制玩家遊戲流程的主要設置。 頂部的設置<strong>（任務要求）</strong>允許您設置需要哪些額外條件才能進行任務。 設置<strong>事件（觸發器）</strong>將是一系列事件，將在整個任務中發生，用於揭示情節，揭示反派，任何你能想出的事件！ 最終設置<strong>設置</strong>將是任務設置中最重要的部分。 它控制任務中有多少個階段，以及您需要在每個階段完成哪些目標才能完成任務。 一如以往，我會挑選值得討論的話題作教程。 <br><br></p>
+<h5 id="241-quest-trigger">2.4.1 Quest Trigger 任務事件觸發<br></h5>
+<p><img alt="triggerinner.png" src="../img/triggerinner.png" /><br><br>
+Here you will find a list of options for selecting the timings for events to be triggered. 
+The first three, are as its literal meaning. The <strong>Trigger when N-th stage starts</strong> condition will trigger when the quest reaches the Nth stage. The <strong>Trigger when N-th stage finishes</strong> condition does similarly, but trigger when the stage finishes.<br>
+在這裡，您將找到一個選項列表，用於選擇要觸發的事件的時機.
+前三者，皆如其字面意思。 <strong>第 N 階段開始時觸發</strong>條件將在任務到達第 N 階段時觸發。 <strong>第 N 階段完成時觸發</strong> 條件類似，但在階段完成時觸發。
+<br><br>
+<img alt="triggertypeselect.png" src="../img/triggertypeselect.png" /><br><br>
+Upon selecting the timing, you will be looking at this page: It shows all the triggers that exist in such timing. 
+You can add some triggers by clicking the [+] button.<br>
+選擇時間後，您將看到此頁面：它顯示了在這一時機中所有存在的事件觸發。
+您可以通過單擊 [+] 按鈕添加一些事件觸發。
+<br><br>
+<img alt="triggerselectinner.png" src="../img/triggerselectinner.png" /><br><br>
+You can now select the types of triggers. The instructions exist upon clicking the buttons, and the types are quite     self-explanatory. Again, I will talk about some most meaningful triggers. <br>
+您現在可以選擇觸發器的類型。 單擊按鈕時會出現說明，並且裏面的説明，步驟等很顯淺。 同樣，我將討論一些最有意義的事件觸發。<br><br></p>
 <style>
-#wth,#mqq,#perm,#mqe{
+h1,h2,h3,h4{
     font-weight: bold;
+}
+h5{
+    font-weight: bold;
+    font-size: 20px;
 }
 </style></div>
         

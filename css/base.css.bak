@@ -24,9 +24,6 @@ ul.nav li.fourth-level {
 ul.nav li.fifth-level {
     padding-left: 36px;
 }
-ul.nav li.sixth-level {
-    padding-left: 48px;
-}
 div.col-md-3 {
     padding-left: 0;
 }
