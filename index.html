@@ -108,7 +108,8 @@
         <div class="col-md-9" role="main">
 
 <p><img alt="fuck" src="img/Beach.png" /></p>
-<p><link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet"></p>
+<p><link href="https://fonts.googleapis.com/css?family=Schoolbell&v1" rel="stylesheet">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script></p>
 <style>
 
   img[alt=fuck]{
@@ -144,8 +145,9 @@ Original Project: <a href="https://github.com/Cutiemango/MangoQuest">MangoQuest 
 <li>More features included in the plugin waiting to be explored! 
   更多新功能由你來發掘！</li>
 </ul>
-<p>What are you waiting for? 你還在等什麽
-<br>
+<p id="poop">
+What are you waiting for? 你還在等什麽</p>
+<p><br>
 <br></p>
 <div class="idk">
 
@@ -188,7 +190,32 @@ Original Project: <a href="https://github.com/Cutiemango/MangoQuest">MangoQuest 
     background-color: gold;
 }
 
+#poop{
+  font-size: 40px;
+}
+
 </style>
+<script>
+let i = 0;
+
+async function fuck(){
+  element = document.getElementById("poop");
+  const idk = ["orange","gold","red","green","blue","magenta"]
+
+    if(++i >=idk.length){
+      i = 0;
+    }
+    element.style.color = idk[i];
+
+}
+  $(document).ready(function(){
+      setInterval(function(){
+        fuck()
+      },500)
+  });
+
+
+</script>
 <div class="bg"></div></div>
         
         
@@ -290,5 +317,5 @@ Original Project: <a href="https://github.com/Cutiemango/MangoQuest">MangoQuest 
 
 <!--
 MkDocs version : 1.3.0
-Build Date UTC : 2022-05-20 08:52:57.090279+00:00
+Build Date UTC : 2022-05-20 10:42:11.360211+00:00
 -->
