@@ -1,4 +1,12 @@
-# MangoQuestReloaded
+# MangoQuestReloaded (Discontinued)
+
+
+由於長期孤芳自賞，已經停止更新
+請轉用其他任務插件，謝絕使用
+
+
+
+
 
 # 使用條款 (terms of conditions)
 -basically non-existent.This is an open source project, you can do whatever you want with it. Nevertheless, it is probably better to observe the rules set by the original author Cutiemango.
